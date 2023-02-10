@@ -1,0 +1,438 @@
+{
+  "Çorba": [
+    {
+      "details": "İşkembe Çorbası",
+      "image": "",
+      "name": "İşkembe Çorbası",
+      "price": 65
+    },
+    {
+    "details": "Tuzlama Çorbası",
+    "image": "",
+    "name": "Tuzlama Çorbası",
+    "price": 68
+    },
+    {
+    "details": "Mercimek Çorbası",
+    "image": "",
+    "name": "Mercimek Çorbası",
+    "price": 44
+    },
+    {
+      "details": "Kelle Çorbası",
+      "image": "",
+      "name": "Kelle Çorbas",
+      "price": 73
+    },
+    {
+    "details": "Ayak Çorbası",
+    "image": "",
+    "name": "Ayak Çorbas",
+    "price": 75
+    },
+    {
+      "details": "Kelle Ayak Karışık",
+      "image": "",
+      "name": "Kelle Ayak Karışık",
+      "price": 78
+    }
+  ],
+  "Ara Sıcak": [
+    {
+        "details": "Islak Hamburger",
+        "image": "",
+        "name": "Islak Hamburger",
+        "price": 30
+    },
+    {
+        "details": "Şırdan Dolması",
+        "image": "",
+        "name": "Şırdan Dolması",
+        "price": 50
+    },
+    {
+        "details": "Midye Dolması(5 Adet)",
+        "image": "",
+        "name": "Midye Dolması(5 Adet)",
+        "price": 35
+    },
+    {
+        "details": "Midye Dolması(10 Adet)",
+        "image": "",
+        "name": "Midye Dolması(10 Adet)",
+        "price": 60
+    },
+    {
+        "details": "Halka Tatlısı",
+        "image": "",
+        "name": "Halka Tatlısı",
+        "price": 20
+    }
+  ],
+  "Kokoreç Çeşitleri": [
+    {
+        "details": "Kokoreç Çeşitleri",
+        "image": "",
+        "name": "Kokoreç Çeşitleri",
+        "price": 95
+    },
+    {
+        "details": "Kokoreç Dürüm",
+        "image": "",
+        "name": "Kokoreç Dürüm",
+        "price": 95
+    },
+    {
+        "details": "Atom Ekmek",
+        "image": "",
+        "name": "Atom Ekmek",
+        "price": 110
+    },
+    {
+        "details": "Atom Dürüm",
+        "image": "",
+        "name": "Atom Dürüm",
+        "price": 110
+    },
+    {
+        "details": "Sebzeli Kokoreç Ekmek",
+        "image": "",
+        "name": "Sebzeli Kokoreç Ekmek",
+        "price": 97
+    },
+    {
+        "details": "Sebzeli Kokoreç Dürüm",
+        "image": "",
+        "name": "Sebzeli Kokoreç Dürüm",
+        "price": 97
+    },
+    {
+        "details": "Çeyrek Kokoreç Ekmek",
+        "image": "",
+        "name": "Çeyrek Kokoreç Ekmek",
+        "price": 49
+    },
+    {
+        "details": "Çeyrek Sebzeli Kokoreç",
+        "image": "",
+        "name": "Çeyrek Sebzeli Kokoreç",
+        "price": 52
+    },
+    {
+        "details": "Kokoreç Servis",
+        "image": "",
+        "name": "Kokoreç Servis",
+        "price": 135
+    },
+    {
+        "details": "Atom Servis",
+        "image": "",
+        "name": "Atom Servis",
+        "price": 190
+    },
+    {
+        "details": "Sebzeli Kokoreç Servis",
+        "image": "",
+        "name": "Sebzeli Kokoreç Servis",
+        "price": 140
+    },
+    {
+        "details": "Pilav Üstü Kokoreç",
+        "image": "",
+        "name": "Pilav Üstü Kokoreç",
+        "price": 140
+    },
+    {
+        "details": "Pilav Üstü Atom",
+        "image": "",
+        "name": "Pilav Üstü Atom",
+        "price": 190
+    },
+    {
+        "details": "Pilav Üstü Seb. Kokoreç",
+        "image": "",
+        "name": "Pilav Üstü Seb. Kokoreç",
+        "price": 140
+    }
+  ],
+  "Tavuk Izgara": [
+    {
+        "details": "Tavuk Ekmek",
+        "image": "",
+        "name": "Tavuk Ekmek",
+        "price": 75
+    },
+    {
+        "details": "Tavuk Dürüm",
+        "image": "",
+        "name": "Tavuk Dürüm",
+        "price": 75
+    },
+    {
+        "details": "Chedarlı Tavuk Ekmek",
+        "image": "",
+        "name": "Chedarlı Tavuk Ekmek",
+        "price": 82
+    },
+    {
+        "details": "Chedarlı Tavuk Dürüm",
+        "image": "",
+        "name": "Chedarlı Tavuk Dürüm",
+        "price": 82
+    },
+    {
+        "details": "Çeyrek Tavuk Ekmek",
+        "image": "",
+        "name": "Çeyrek Tavuk Ekmek",
+        "price": 40
+    },
+    {
+        "details": "Çeyrk. Ched. Tavuk Ekmek",
+        "image": "",
+        "name": "Çeyrk. Ched. Tavuk Ekmek",
+        "price": 44
+    },
+    {
+        "details": "Servis Tavuk",
+        "image": "",
+        "name": "Servis Tavuk",
+        "price": 115
+    },
+    {
+        "details": "Chedarlı Servis Tavuk",
+        "image": "",
+        "name": "Chedarlı Servis Tavuk",
+        "price": 125
+    },
+    {
+        "details": "Pilav Üstü Tavuk",
+        "image": "",
+        "name": "Pilav Üstü Tavuk",
+        "price": 120
+    },
+    {
+        "details": "Pilav Üstü Ched. Tavuk",
+        "image": "",
+        "name": "Pilav Üstü Ched. Tavuk",
+        "price": 130
+    },
+    {
+        "details": "Tavuk Pilav (Haşlanmış)",
+        "image": "",
+        "name": "Tavuk Pilav (Haşlanmış)",
+        "price": 75
+    }
+  ],
+  "Köfte": [
+    {
+        "details": "Köfte Ekmek",
+        "image": "",
+        "name": "Köfte Ekmek",
+        "price": 89
+    },
+    {
+        "details": "Köfte Dürüm",
+        "image": "",
+        "name": "Köfte Dürüm",
+        "price": 89
+    },
+    {
+        "details": "Chedarlı Köfte Ekmek",
+        "image": "",
+        "name": "Chedarlı Köfte Ekmek",
+        "price": 94
+    },
+    {
+        "details": "Chedarlı Köfte Dürüm",
+        "image": "",
+        "name": "Chedarlı Köfte Dürüm",
+        "price": 94
+    },
+    {
+        "details": "Çeyrek Köfte Ekmek",
+        "image": "",
+        "name": "Çeyrek Köfte Ekmek",
+        "price": 47
+    },
+    {
+        "details": "Çeyrek Ched.Köfte Ekmek",
+        "image": "",
+        "name": "Çeyrek Ched.Köfte Ekmek",
+        "price": 50
+    },
+    {
+        "details": "Servis Köfte",
+        "image": "",
+        "name": "Servis Köfte",
+        "price": 125
+    },
+    {
+        "details": "Chedarlı Servis Köfte",
+        "image": "",
+        "name": "Chedarlı Servis Köfte",
+        "price": 130
+    },
+    {
+        "details": "Pilav Üstü Köfte",
+        "image": "",
+        "name": "Pilav Üstü Köfte",
+        "price": 130
+    },
+    {
+        "details": "Pilav Üstü Ched. Köfte",
+        "image": "",
+        "name": "Pilav Üstü Ched. Köfte",
+        "price": 135
+    }
+  ],
+  "Antrikot": [
+    {
+        "details": "Anrikot Ekmek",
+        "image": "",
+        "name": "Anrikot Ekmek",
+        "price": 115
+    },
+    {
+        "details": "Antrikot Dürüm",
+        "image": "",
+        "name": "Antrikot Dürüm",
+        "price": 115
+    },
+    {
+        "details": "Ched. Antrikot Ekmek",
+        "image": "",
+        "name": "Ched. Antrikot Ekmek",
+        "price": 120
+    },
+    {
+        "details": "Ched. Antrikot Dürüm",
+        "image": "",
+        "name": "Ched. Antrikot Dürüm",
+        "price": 120
+    },
+    {
+        "details": "Antrikot Servis",
+        "image": "",
+        "name": "Antrikot Servis",
+        "price": 150
+    },
+    {
+        "details": "Ched. Antrikot Servis",
+        "image": "",
+        "name": "Ched. Antrikot Servis",
+        "price": 155
+    },
+    {
+        "details": "Pilav Üstü Antrikot",
+        "image": "",
+        "name": "Pilav Üstü Antrikot",
+        "price": 125
+    },
+    {
+        "details": "Ched. Pilav Üstü Antrikot",
+        "image": "",
+        "name": "Ched. Pilav Üstü Antrikot",
+        "price": 160
+    }
+  ],
+  "Sucuk": [
+    {
+        "details": "Sucuk Ekmek",
+        "image": "",
+        "name": "Sucuk Ekmek",
+        "price": 89
+    },
+    {
+        "details": "Sucuk Dürüm",
+        "image": "",
+        "name": "Sucuk Dürüm",
+        "price": 89
+    },
+    {
+        "details": "Ched. Sucuk Ekmek",
+        "image": "",
+        "name": "Ched. Sucuk Ekmek",
+        "price": 94
+    },
+    {
+        "details": "Ched. Sucuk Dürüm",
+        "image": "",
+        "name": "Ched. Sucuk Dürüm",
+        "price": 94
+    },
+    {
+        "details": "Çeyrek Sucuk Ekmek",
+        "image": "",
+        "name": "Çeyrek Sucuk Ekmek",
+        "price": 45
+    },
+    {
+        "details": "Çeyrek Ched.Sucuk Ekmek",
+        "image": "",
+        "name": "Çeyrek Ched.Sucuk Ekmek",
+        "price": 48
+    }
+  ],
+  "İçecekler": [
+    {
+        "details": "Şişe Ayran",
+        "image": "",
+        "name": "Şişe Ayran",
+        "price": 16
+    },
+    {
+        "details": "Kutu Ayran",
+        "image": "",
+        "name": "Kutu Ayran",
+        "price": 20
+    },
+    {
+        "details": "Kola",
+        "image": "",
+        "name": "Kola",
+        "price": 26
+    },
+    {
+        "details": "Kola Zero",
+        "image": "",
+        "name": "Kola Zero",
+        "price": 26
+    },
+    {
+        "details": "Spriht",
+        "image": "",
+        "name": "Spriht",
+        "price": 26
+    },
+    {
+        "details": "Fanta",
+        "image": "",
+        "name": "Fanta",
+        "price": 26
+    },
+    {
+        "details": "Fuse Tea",
+        "image": "",
+        "name": "Fuse Tea",
+        "price": 26
+    },
+    {
+        "details": "Şalgam",
+        "image": "",
+        "name": "Şalgam",
+        "price": 20
+    },
+    {
+        "details": "Soda",
+        "image": "",
+        "name": "Soda",
+        "price": 14
+    },
+    {
+        "details": "Su",
+        "image": "",
+        "name": "Su",
+        "price": 10
+    }
+  ]
+}
