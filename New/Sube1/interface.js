@@ -1,14 +1,14 @@
 
 function init(){
-var config = {
-    apiKey: "AIzaSyDwzi9ETDKbMTkP4lWkAnd2Di6oMBSmA10",
-    authDomain: "bolumangalkeyfi-63388.firebaseapp.com",
-    databaseURL: "https://bolumangalkeyfi-63388-default-rtdb.firebaseio.com",
-    projectId: "bolumangalkeyfi-63388",
-    storageBucket: "bolumangalkeyfi-63388.appspot.com",
-    messagingSenderId: "547222676335",
-    appId: "1:547222676335:web:efa725ed4782066ac03e9a"
-};
+    var config = {
+        apiKey: "AIzaSyCzV7YW8pZAZXB9HlgIUIdBudJ7ON42lS8",
+        authDomain: "kronoscoffee-1.firebaseapp.com",
+        databaseURL: "https://kronoscoffee-1-default-rtdb.firebaseio.com/",
+        projectId: "kronoscoffee-1",
+        storageBucket: "kronoscoffee-1.appspot.com",
+        messagingSenderId: "874773929114",
+        appId: "1:874773929114:web:7c2f499719d0847a4d1323"
+    };
 
 firebase.initializeApp(config);
 var database = firebase.database();
@@ -34,7 +34,7 @@ ref.on("value", function(snapshot) {
     list_menu.innerHTML = ""
     for(var i=0; i<keys.length;i++){
         for(var k=0; k<datas[i].length;k++){
-             list_menu.innerHTML += '<div class="col-lg-6 menu-item filter-'+keys[i]+'" id="'+keys[i]+'"> <img src="'+datas[i][k].image+'" class="menu-img" alt="" id="'+datas[i][k].image+'" onclick=picture_open(this)> <div class="menu-content">'+
+             list_menu.innerHTML += '<div class="col-lg-6 menu-item filter-'+keys[i]+'" id="'+keys[i]+'"> <img src="../assets/img/logo.jpg" class="menu-img" alt="" id="../assets/img/logo.jpg" onclick=picture_open(this)> <div class="menu-content">'+
             '<a href="#">'+datas[i][k].name+'</a><span>'+datas[i][k].price+' TL</span></div> <div class="menu-ingredients">'+datas[i][k].details+'</div></div>'
         
         }
@@ -50,7 +50,7 @@ function usoft(){
     Swal.fire({
         toast: true,
         title: 'USoft - <b><u>USoft the clear choice</b></u> ',
-        html:"You can reach us at <a href='mailto:usoft.projects@gmail.com'><b><u> this address.</b></u></a> <br> <p>&copy;Copyright 2022. All Rights Reserved.<br> <b>USoft </b></p>",
+        html:"You can reach us at <a href='mailto:usoft.projects@gmail.com'><b><u> this address.</b></u></a> <br> <p>&copy;Copyright 2023. All Rights Reserved.<br> <b>USoft </b></p>",
         imageUrl: '../assets/img/rocket.png',
         imageAlt: 'Custom image',
       });

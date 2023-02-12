@@ -2,37 +2,37 @@
   "Çorba": [
     {
       "details": "İşkembe Çorbası",
-      "image": "",
+      "image": "../assets/img/logo.jpg",
       "name": "İşkembe Çorbası",
       "price": 65
     },
     {
     "details": "Tuzlama Çorbası",
-    "image": "",
+    "image": "../assets/img/logo.jpg",
     "name": "Tuzlama Çorbası",
     "price": 68
     },
     {
     "details": "Mercimek Çorbası",
-    "image": "",
+    "image": "../assets/img/logo.jpg",
     "name": "Mercimek Çorbası",
     "price": 44
     },
     {
       "details": "Kelle Çorbası",
-      "image": "",
+      "image": "../assets/img/logo.jpg",
       "name": "Kelle Çorbas",
       "price": 73
     },
     {
     "details": "Ayak Çorbası",
-    "image": "",
+    "image": "../assets/img/logo.jpg",
     "name": "Ayak Çorbas",
     "price": 75
     },
     {
       "details": "Kelle Ayak Karışık",
-      "image": "",
+      "image": "../assets/img/logo.jpg",
       "name": "Kelle Ayak Karışık",
       "price": 78
     }
@@ -40,31 +40,31 @@
   "Ara Sıcak": [
     {
         "details": "Islak Hamburger",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Islak Hamburger",
         "price": 30
     },
     {
         "details": "Şırdan Dolması",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Şırdan Dolması",
         "price": 50
     },
     {
         "details": "Midye Dolması(5 Adet)",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Midye Dolması(5 Adet)",
         "price": 35
     },
     {
         "details": "Midye Dolması(10 Adet)",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Midye Dolması(10 Adet)",
         "price": 60
     },
     {
         "details": "Halka Tatlısı",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Halka Tatlısı",
         "price": 20
     }
@@ -72,85 +72,85 @@
   "Kokoreç Çeşitleri": [
     {
         "details": "Kokoreç Çeşitleri",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Kokoreç Çeşitleri",
         "price": 95
     },
     {
         "details": "Kokoreç Dürüm",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Kokoreç Dürüm",
         "price": 95
     },
     {
         "details": "Atom Ekmek",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Atom Ekmek",
         "price": 110
     },
     {
         "details": "Atom Dürüm",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Atom Dürüm",
         "price": 110
     },
     {
         "details": "Sebzeli Kokoreç Ekmek",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Sebzeli Kokoreç Ekmek",
         "price": 97
     },
     {
         "details": "Sebzeli Kokoreç Dürüm",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Sebzeli Kokoreç Dürüm",
         "price": 97
     },
     {
         "details": "Çeyrek Kokoreç Ekmek",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Çeyrek Kokoreç Ekmek",
         "price": 49
     },
     {
         "details": "Çeyrek Sebzeli Kokoreç",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Çeyrek Sebzeli Kokoreç",
         "price": 52
     },
     {
         "details": "Kokoreç Servis",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Kokoreç Servis",
         "price": 135
     },
     {
         "details": "Atom Servis",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Atom Servis",
         "price": 190
     },
     {
         "details": "Sebzeli Kokoreç Servis",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Sebzeli Kokoreç Servis",
         "price": 140
     },
     {
         "details": "Pilav Üstü Kokoreç",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Pilav Üstü Kokoreç",
         "price": 140
     },
     {
         "details": "Pilav Üstü Atom",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Pilav Üstü Atom",
         "price": 190
     },
     {
         "details": "Pilav Üstü Seb. Kokoreç",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Pilav Üstü Seb. Kokoreç",
         "price": 140
     }
@@ -158,67 +158,67 @@
   "Tavuk Izgara": [
     {
         "details": "Tavuk Ekmek",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Tavuk Ekmek",
         "price": 75
     },
     {
         "details": "Tavuk Dürüm",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Tavuk Dürüm",
         "price": 75
     },
     {
         "details": "Chedarlı Tavuk Ekmek",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Chedarlı Tavuk Ekmek",
         "price": 82
     },
     {
         "details": "Chedarlı Tavuk Dürüm",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Chedarlı Tavuk Dürüm",
         "price": 82
     },
     {
         "details": "Çeyrek Tavuk Ekmek",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Çeyrek Tavuk Ekmek",
         "price": 40
     },
     {
         "details": "Çeyrk. Ched. Tavuk Ekmek",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Çeyrk. Ched. Tavuk Ekmek",
         "price": 44
     },
     {
         "details": "Servis Tavuk",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Servis Tavuk",
         "price": 115
     },
     {
         "details": "Chedarlı Servis Tavuk",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Chedarlı Servis Tavuk",
         "price": 125
     },
     {
         "details": "Pilav Üstü Tavuk",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Pilav Üstü Tavuk",
         "price": 120
     },
     {
         "details": "Pilav Üstü Ched. Tavuk",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Pilav Üstü Ched. Tavuk",
         "price": 130
     },
     {
         "details": "Tavuk Pilav (Haşlanmış)",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Tavuk Pilav (Haşlanmış)",
         "price": 75
     }
@@ -226,61 +226,61 @@
   "Köfte": [
     {
         "details": "Köfte Ekmek",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Köfte Ekmek",
         "price": 89
     },
     {
         "details": "Köfte Dürüm",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Köfte Dürüm",
         "price": 89
     },
     {
         "details": "Chedarlı Köfte Ekmek",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Chedarlı Köfte Ekmek",
         "price": 94
     },
     {
         "details": "Chedarlı Köfte Dürüm",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Chedarlı Köfte Dürüm",
         "price": 94
     },
     {
         "details": "Çeyrek Köfte Ekmek",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Çeyrek Köfte Ekmek",
         "price": 47
     },
     {
         "details": "Çeyrek Ched.Köfte Ekmek",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Çeyrek Ched.Köfte Ekmek",
         "price": 50
     },
     {
         "details": "Servis Köfte",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Servis Köfte",
         "price": 125
     },
     {
         "details": "Chedarlı Servis Köfte",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Chedarlı Servis Köfte",
         "price": 130
     },
     {
         "details": "Pilav Üstü Köfte",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Pilav Üstü Köfte",
         "price": 130
     },
     {
         "details": "Pilav Üstü Ched. Köfte",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Pilav Üstü Ched. Köfte",
         "price": 135
     }
@@ -288,49 +288,49 @@
   "Antrikot": [
     {
         "details": "Anrikot Ekmek",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Anrikot Ekmek",
         "price": 115
     },
     {
         "details": "Antrikot Dürüm",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Antrikot Dürüm",
         "price": 115
     },
     {
         "details": "Ched. Antrikot Ekmek",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Ched. Antrikot Ekmek",
         "price": 120
     },
     {
         "details": "Ched. Antrikot Dürüm",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Ched. Antrikot Dürüm",
         "price": 120
     },
     {
         "details": "Antrikot Servis",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Antrikot Servis",
         "price": 150
     },
     {
         "details": "Ched. Antrikot Servis",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Ched. Antrikot Servis",
         "price": 155
     },
     {
         "details": "Pilav Üstü Antrikot",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Pilav Üstü Antrikot",
         "price": 125
     },
     {
         "details": "Ched. Pilav Üstü Antrikot",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Ched. Pilav Üstü Antrikot",
         "price": 160
     }
@@ -338,37 +338,37 @@
   "Sucuk": [
     {
         "details": "Sucuk Ekmek",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Sucuk Ekmek",
         "price": 89
     },
     {
         "details": "Sucuk Dürüm",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Sucuk Dürüm",
         "price": 89
     },
     {
         "details": "Ched. Sucuk Ekmek",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Ched. Sucuk Ekmek",
         "price": 94
     },
     {
         "details": "Ched. Sucuk Dürüm",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Ched. Sucuk Dürüm",
         "price": 94
     },
     {
         "details": "Çeyrek Sucuk Ekmek",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Çeyrek Sucuk Ekmek",
         "price": 45
     },
     {
         "details": "Çeyrek Ched.Sucuk Ekmek",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Çeyrek Ched.Sucuk Ekmek",
         "price": 48
     }
@@ -376,63 +376,68 @@
   "İçecekler": [
     {
         "details": "Şişe Ayran",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Şişe Ayran",
         "price": 16
     },
     {
         "details": "Kutu Ayran",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Kutu Ayran",
         "price": 20
     },
     {
         "details": "Kola",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Kola",
         "price": 26
     },
     {
         "details": "Kola Zero",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Kola Zero",
         "price": 26
     },
     {
         "details": "Spriht",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Spriht",
         "price": 26
     },
     {
         "details": "Fanta",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Fanta",
         "price": 26
     },
     {
         "details": "Fuse Tea",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Fuse Tea",
         "price": 26
     },
     {
         "details": "Şalgam",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Şalgam",
         "price": 20
     },
     {
         "details": "Soda",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Soda",
         "price": 14
     },
     {
         "details": "Su",
-        "image": "",
+        "image": "../assets/img/logo.jpg",
         "name": "Su",
         "price": 10
+    }
+  ],
+  "1configurations":[
+    {
+        "category_name": ["Çorba", "Ara Sıcak", "Kokoreç Çeşitleri", "Tavuk Izgara", "Köfte", "Antrikot", "Sucuk", "İçecekler"]
     }
   ]
 }

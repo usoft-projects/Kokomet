@@ -26,17 +26,23 @@ function init(){
         // console.log(keys)
         // console.log(Object.values(test))
         list_categories.innerHTML = '<li>Tümü</li>'
-        for(var i=0;i<keys.length;i++){
+        for(var i=1;i<(keys.length);i++){
             list_categories.innerHTML += '<li> <a href="#'+keys[i]+'"> '+keys[i]+'</a></li>'
         }
     
         var list_menu = document.getElementById("menu_tabs")
         list_menu.innerHTML = ""
-        for(var i=0; i<keys.length;i++){
+        for(var i=1; i<keys.length;i++){
             for(var k=0; k<datas[i].length;k++){
-                 list_menu.innerHTML += '<div class="col-lg-6 menu-item filter-'+keys[i]+'" id="'+keys[i]+'"> <div class="menu-content">'+
-                '<a href="#">'+datas[i][k].name+'</a><span>'+datas[i][k].price+' TL</span></div> <div class="menu-ingredients">'+datas[i][k].details+'</div></div>'
-            
+                if (k == 0 ){
+                    list_menu.innerHTML += ' <div class="col-lg-6 menu-item filter-'+keys[i]+'" id="'+keys[i]+'"> <hr><div style="padding-top:35px;"> <h2>'+keys[i]+'</h2>  <div class="menu-content">'+
+                    '<a href="#">'+datas[i][k].name+'</a><span>'+datas[i][k].price+' TL</span></div> <div class="menu-ingredients">'+datas[i][k].details+'</div></div></div>'    
+                }
+                else{
+                    list_menu.innerHTML += ' <div class="col-lg-6 menu-item filter-'+keys[i]+'" id="'+keys[i]+'"> <div class="menu-content">'+
+                    '<a href="#">'+datas[i][k].name+'</a><span>'+datas[i][k].price+' TL</span></div> <div class="menu-ingredients">'+datas[i][k].details+'</div></div>'
+                }
+
             }
         }
        
