@@ -26,12 +26,13 @@ function init(){
         // console.log(keys)
         // console.log(Object.values(test))
         list_categories.innerHTML = '<li>Tümü</li>'
-        for(var i=1;i<(keys.length);i++){
-            list_categories.innerHTML += '<li> <a href="#'+keys[i]+'"> '+keys[i]+'</a></li>'
+        for(var i=0;i<(datas[0].length);i++){
+            list_categories.innerHTML += '<li> <a href="#'+datas[0][i]+'"> '+datas[0][i]+'</a></li>'
         }
     
         var list_menu = document.getElementById("menu_tabs")
         list_menu.innerHTML = ""
+        // console.log(datas[0]) // 1Configurations kısmı
         for(var i=1; i<keys.length;i++){
             for(var k=0; k<datas[i].length;k++){
                 if (k == 0 ){
@@ -42,7 +43,6 @@ function init(){
                     list_menu.innerHTML += ' <div class="col-lg-6 menu-item filter-'+keys[i]+'" id="'+keys[i]+'"> <div class="menu-content">'+
                     '<a href="#">'+datas[i][k].name+'</a><span>'+datas[i][k].price+' TL</span></div> <div class="menu-ingredients">'+datas[i][k].details+'</div></div>'
                 }
-
             }
         }
        

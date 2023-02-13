@@ -435,9 +435,5 @@
         "price": 10
     }
   ],
-  "1configurations":[
-    {
-        "category_name": ["Çorba", "Ara Sıcak", "Kokoreç Çeşitleri", "Tavuk Izgara", "Köfte", "Antrikot", "Sucuk", "İçecekler"]
-    }
-  ]
+  "1Configurations": ["Çorba", "Ara Sıcak", "Kokoreç Çeşitleri", "Tavuk Izgara", "Köfte", "Antrikot", "Sucuk", "İçecekler"]
 }

@@ -397,14 +397,18 @@ function usoft(){
 }
 
 function ordercategory(){
+    var to_save = firebase.database().ref();
     const category_order = []
-    console.log(JSON.stringify(keys2))
-    keys2 = JSON.stringify(keys2)
-    console.log(JSON.parse(keys2[0]))
+
+    local_storage = (JSON.stringify(local_storage))
+    local_storage = (JSON.parse(local_storage))
+
+    console.log(local_storage)
+
     var div_drop =''
     for(var k = 1; k<keys2.length; k++){
         var drop = '<div style="padding-bottom:8px;"><select class="form-select btn btn-info " aria-label="Please Select Categories" id="categries'+k.toString()+'" >'+
-        '<option selected>Lütfen Kategori Sırası Seçiniz '+k.toString()+'</option>'
+        '<option selected>Lütfen Kategori Sırası Seçiniz </option>'
         for(var i=1;i<keys2.length;i++){
             drop += '<option value="'+keys2[i]+'">'+keys2[i]+'</option>'
         }
@@ -434,8 +438,14 @@ function ordercategory(){
                 console.log(unique)
                 if(category_order.length === unique.length) {
                     console.log("aynı veri icermiyor");
+                    local_storage["1Configurations"] = category_order
+
+                    to_save.set(local_storage, function () {
+                        Swal.fire("Düzenlendi.", '', 'info')
+                        setTimeout(() => {  location.reload() }, 1000);
+                    })      
                 } else {
-                    console.log("aynı veri iceriyor");
+                    Swal.fire("Liste Aynı Kategoriyi İçeremez!", '', 'error')
                 }
             }
         })
