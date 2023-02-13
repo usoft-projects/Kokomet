@@ -32,7 +32,7 @@ function init(){
     
         var list_menu = document.getElementById("menu_tabs")
         list_menu.innerHTML = ""
-        // console.log(datas[0]) // 1Configurations kısmı
+        console.log(datas[0]) // 1Configurations kısmı
 
         for(var i=0; i<datas[0].length; i++ ){
             console.log(datas[0][i])
