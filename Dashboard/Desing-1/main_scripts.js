@@ -51,6 +51,7 @@ ref.on("value", function(snapshot) {
             '<i class="fas fa-trash-alt" style="color:red;"  id="'+keys[i] +'**'+ datas[i][k].name+'**'+datas[i][k].details+'**'+datas[i][k].price+'**'+k+'**'+datas[i][k].image+'" onClick=remove(this)></i> </td></tr>'
         }
     }
+
 }, function (error) {
     console.log("Error: " + error.code);
 });
@@ -109,13 +110,8 @@ function update(d){
                     local_storage[categories].splice(index, 0, data);
                     console.log(local_storage)
                     to_save.set(local_storage, function () {
-                        var new_test = Object.keys(local_storage)
-                        var remove_value = new_test.splice(0, 1);
-                        local_storage["1Configurations"] = new_test
-                        to_save.set(local_storage, function () {
                             Swal.fire("Güncellendi.", '', 'info')
                             setTimeout(() => {  location.reload() }, 1000);
-                        }) 
                     })
               } else {
                 Swal.fire("Güncelleniyor Bekleniyiniz.", '', 'info')
@@ -139,13 +135,8 @@ function update(d){
                             local_storage[categories].splice(index, 0, data);
                             console.log(local_storage)
                             to_save.set(local_storage, function () {
-                                var new_test = Object.keys(local_storage)
-                                var remove_value = new_test.splice(0, 1);
-                                local_storage["1Configurations"] = new_test
-                                to_save.set(local_storage, function () {
-                                    Swal.fire("Güncellendi.", '', 'info')
-                                    setTimeout(() => {  location.reload() }, 1000);
-                                }) 
+                                Swal.fire("Güncellendi.", '', 'info')
+                                setTimeout(() => {  location.reload() }, 1000)
                             })
                     })
                 }).catch(e =>{
@@ -164,10 +155,10 @@ function remove(d){
     var test = d.id
     var keys = test.split("**")[0]
     var link_image = test.split("**")[5]
-     local_storage = (JSON.stringify(local_storage))
-     local_storage = (JSON.parse(local_storage))
-     var index = parseInt(test.split("**")[4])
-
+    local_storage = (JSON.stringify(local_storage))
+    local_storage = (JSON.parse(local_storage))
+    var index = parseInt(test.split("**")[4])
+    var to_save = firebase.database().ref();
     Swal.fire({
         title: test.split("**")[0]+ ', '+test.split("**")[1],
         text: 'Menüyü silmek istediğinize emin misiniz?',
@@ -179,17 +170,28 @@ function remove(d){
         cancelButtonText: 'Vazgeç'
       }).then((result) => {
         if (result.isConfirmed) {
-            local_storage[keys].splice(index,1)
-            var ref = firebase.database().ref()
-            ref.set(local_storage, function () {
-                var new_test = Object.keys(local_storage)
-                var remove_value = new_test.splice(0, 1);
-                local_storage["1Configurations"] = new_test
-                to_save.set(local_storage, function () {
+            var uzunluk = local_storage[keys].length
+            if(uzunluk === 1){
+                local_storage[keys].splice(index,1)
+                var ref = firebase.database().ref()
+                ref.set(local_storage, function () {
+                    var new_test = Object.keys(local_storage)
+                    var remove_value = new_test.splice(0, 1);
+                    local_storage["1Configurations"] = new_test
+                    to_save.set(local_storage, function () {
+                        Swal.fire("Kategori Silindi. <br> Yeni Kategori Sıralaması Yapmayı Unutmayın.", '', 'info')
+                        setTimeout(() => {  location.reload() }, 4500);
+                    })  
+                })
+            }else{
+                local_storage[keys].splice(index,1)
+                var ref = firebase.database().ref()
+                ref.set(local_storage, function () {
                     Swal.fire("Menü Silindi.", '', 'info')
-                    setTimeout(() => {  location.reload() }, 1000);
-                })  
-            })
+                    setTimeout(() => {  location.reload() }, 1500);
+                })
+            }
+
         }
       })
 }
@@ -247,6 +249,7 @@ function newmenu(){
                     console.log(local_storage)
                     to_save.set(local_storage, function () {
                         Swal.fire("Menü Eklendi.", '', 'info')
+                        setTimeout(() => {  location.reload() }, 1500);
                     })
               }else{
                 Swal.fire("Ekleniyor Bekleniyiniz.", '', 'info')
@@ -269,6 +272,7 @@ function newmenu(){
                             console.log(local_storage)
                             to_save.set(local_storage, function () {
                                 Swal.fire("Menü Eklendi", '', 'info')
+                                setTimeout(() => {  location.reload() }, 1500);
                             })
                     })
                 }).catch(e =>{
@@ -329,8 +333,8 @@ function newcategory(){
                     var remove_value = new_test.splice(0, 1);
                     local_storage["1Configurations"] = new_test
                     to_save.set(local_storage, function () {
-                        Swal.fire("Yeni kategori eklendi.", '', 'info')
-                        setTimeout(() => {  location.reload() }, 1000);
+                        Swal.fire("Yeni kategori eklendi. <br> Yeni Kategori Sıralaması Yapmayı Unutmayın.", '', 'info')
+                        setTimeout(() => {  location.reload() }, 6500);
                     })   
                 })
 
@@ -357,8 +361,8 @@ function newcategory(){
                             var remove_value = new_test.splice(0, 1);
                             local_storage["1Configurations"] = new_test
                             to_save.set(local_storage, function () {
-                                Swal.fire("Yeni kategori eklendi.", '', 'info')
-                                setTimeout(() => {  location.reload() }, 4500);
+                                Swal.fire("Yeni kategori eklendi. <br> Yeni Kategori Sıralaması Yapmayı Unutmayın.", '', 'info')
+                                setTimeout(() => {  location.reload() }, 6500);
                             })   
                         })
                     })

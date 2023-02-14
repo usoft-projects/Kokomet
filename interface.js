@@ -41,11 +41,11 @@ function init(){
             for(var k=0; k<datas[index_key].length; k++){
                 if (k == 0 ){
                     list_menu.innerHTML += ' <div class="col-lg-6 menu-item filter-'+datas[0][i]+'" id="'+datas[0][i]+'"> <hr><div style="padding-top:35px;"> <h2>'+datas[0][i]+'</h2>  <div class="menu-content">'+
-                    '<a href="#">'+datas[index_key][k].name+'</a><span>'+datas[index_key][k].price+' TL</span></div> <div class="menu-ingredients">'+datas[index_key][k].details+'</div></div></div>'    
+                    '<a href="#!">'+datas[index_key][k].name+'</a><span>'+datas[index_key][k].price+' TL</span></div> <div class="menu-ingredients">'+datas[index_key][k].details+'</div></div></div>'    
                 }
                 else{
                     list_menu.innerHTML += ' <div class="col-lg-6 menu-item filter-'+datas[0][i]+'" id="'+datas[0][i]+'"> <div class="menu-content">'+
-                    '<a href="#">'+datas[index_key][k].name+'</a><span>'+datas[index_key][k].price+' TL</span></div> <div class="menu-ingredients">'+datas[index_key][k].details+'</div></div>'
+                    '<a href="#!">'+datas[index_key][k].name+'</a><span>'+datas[index_key][k].price+' TL</span></div> <div class="menu-ingredients">'+datas[index_key][k].details+'</div></div>'
                 }
             }
         }
@@ -72,8 +72,8 @@ function init(){
     function usoft(){
         Swal.fire({
             toast: true,
-            title: 'Kronos Coffee',
-            html:"Bizce Bizi Çok Seveceksiniz",
+            title: 'Kokomet',
+            html:"Keyif Veren Lezzet",
             imageUrl: 'assets/img/logo.jpg',
             imageAlt: 'Custom image',
           });
