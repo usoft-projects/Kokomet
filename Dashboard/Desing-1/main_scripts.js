@@ -42,13 +42,23 @@ ref.on("value", function(snapshot) {
     //     interface.innerHTML += header + insider +'</div> </div>'
     // }
     //card html son
+    var categories_filter = document.getElementById("categories_filter")
+    for(var i=1; i<keys.length; i++){
+        if (keys[i].match(/\s/)) {
+            var myArray = keys[i].split(" ");
+            categories_filter.innerHTML += '<a href="#'+myArray[0]+'"><button type="button" class="btn btn-info">'+keys[i]+'</button> </a>&nbsp;&nbsp';
+        }else{
+            categories_filter.innerHTML += '<a href="#'+keys[i]+'"><button type="button" class="btn btn-info">'+keys[i]+'</button> </a>&nbsp;&nbsp';
+        }
+    }
+
 
     var interface_2 = document.getElementById("datas_menu")
     for(var i=1; i<keys.length; i++){
         for(var k=0; k<datas[i].length; k++){
-            interface_2.innerHTML += '<tr> <td  id="'+datas[i][k].image+'" onclick=image_view(this)>'+keys[i]+'</td><td>'+datas[i][k].name+'</td><td>'+datas[i][k].details+'</td><td>'+datas[i][k].price+'</td><td>'+
+            interface_2.innerHTML += '<div id='+keys[i]+'><tr> <td  id="'+datas[i][k].image+'" onclick=image_view(this)>'+keys[i]+'</td><td>'+datas[i][k].name+'</td><td>'+datas[i][k].details+'</td><td>'+datas[i][k].price+'</td><td>'+
             '<i class="fas fa-edit" style="color:green;" id="'+keys[i] +'**'+ datas[i][k].name+'**'+datas[i][k].details+'**'+datas[i][k].price+'**'+k+'**'+datas[i][k].image+'" onClick=update(this)></i>&nbsp;&nbsp;' +
-            '<i class="fas fa-trash-alt" style="color:red;"  id="'+keys[i] +'**'+ datas[i][k].name+'**'+datas[i][k].details+'**'+datas[i][k].price+'**'+k+'**'+datas[i][k].image+'" onClick=remove(this)></i> </td></tr>'
+            '<i class="fas fa-trash-alt" style="color:red;"  id="'+keys[i] +'**'+ datas[i][k].name+'**'+datas[i][k].details+'**'+datas[i][k].price+'**'+k+'**'+datas[i][k].image+'" onClick=remove(this)></i> </td></tr></div>'
         }
     }
 
@@ -65,6 +75,8 @@ ref.on("value", function(snapshot) {
 //test.split("**")[3] --> price of menu
 
 //test.split("**")[4] --> image of menu
+
+
 
 function update(d){ 
     var test = d.id
