@@ -70,10 +70,42 @@ function init(){
     setTimeout(() => {     init() }, 1500);
  
     function usoft(){
+        var text =  '        <section id="contact" class="contact" id="conts"> \
+          <div class="container" data-aos="fade-up"> \
+            <div class="section-title"> \
+              <h2>İletişim</h2> \
+              <p>İletişime Geçin</p> \
+            </div> \
+          </div> \
+          <div class="container" data-aos="fade-up"> \
+            <div class="row mt-5"> \
+              <div class="col-lg-4"> \
+                <div class="info"> \
+                  <div class="address"> \
+                    <i class="bi bi-geo-alt"></i> \
+                    <h4>Yer/Konum:</h4> \
+                    <p>Yaşamkent Mahallesi, 3036. Cadde <br> \
+                      3097. Sokak No:15 Çayyolu <br> \
+                      Çalışma Saatleri : 12:00 - 02:00</p> \
+                  </div> \
+                  <div class="email">\
+                    <i class="bi bi-envelope"></i>\
+                    <h4>Email:</h4>\
+                    <p>--</p>\
+                  </div>\
+                  <div class="phone">\
+                    <i class="bi bi-phone"></i>\
+                    <h4>Telefon:</h4>\
+                    <p>05550902991</p>\
+                  </div>\
+                </div>\
+              </div>\
+            </div>\
+          </div> \
+        </section> '
         Swal.fire({
             toast: true,
-            title: 'Kokomet',
-            html:"Keyif Veren Lezzet",
+            html:text   ,
             imageUrl: 'assets/img/logo.jpg',
             imageAlt: 'Custom image',
           });
