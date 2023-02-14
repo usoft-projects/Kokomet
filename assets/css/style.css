@@ -42,7 +42,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #ad31144;
+  background: #ad3114;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -56,7 +56,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #ffc064;
+  background: #ad3114;
   color: #fff;
 }
 
@@ -87,7 +87,7 @@ h6 {
 }
 
 #topbar i {
-  color: #ad31144;
+  color: #ad3114;
   line-height: 0;
 }
 
@@ -142,7 +142,7 @@ h6 {
 # Book a table button Menu
 --------------------------------------------------------------*/
 .book-a-table-btn {
-  background: #ad31144;
+  background: #ad3114;
   color: #fff;
   border-radius: 50px;
   margin: 0 0 0 20px;
