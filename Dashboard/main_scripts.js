@@ -123,7 +123,7 @@ function update(d){
                     console.log(local_storage)
                     to_save.set(local_storage, function () {
                             Swal.fire("Güncellendi.", '', 'info')
-                            setTimeout(() => {  location.reload() }, 1000);
+                            setTimeout(() => {  location.reload() }, 1500);
                     })
               } else {
                 Swal.fire("Güncelleniyor Bekleniyiniz.", '', 'info')
@@ -148,7 +148,7 @@ function update(d){
                             console.log(local_storage)
                             to_save.set(local_storage, function () {
                                 Swal.fire("Güncellendi.", '', 'info')
-                                setTimeout(() => {  location.reload() }, 1000)
+                                setTimeout(() => {  location.reload() }, 1500)
                             })
                     })
                 }).catch(e =>{
@@ -228,8 +228,8 @@ function newmenu(){
         html: drop +'<br><br>'+
             '<input type="text" class="form-control" id="name" aria-describedby="Name" placeholder="İsim"> <br>'+
             '<input type="text" class="form-control" id="details" aria-describedby="Details" placeholder="İçerik"> <br>'+
-            '<input type="number" class="form-control" id="price" aria-describedby="Price" placeholder="Fiyat" ><br>',
-            // '<label class="btn btn-warning">  Resim Seçiniz <input type="file" id="files" name="files[]" hidden> </label>',
+            '<input type="number" class="form-control" id="price" aria-describedby="Price" placeholder="Fiyat" ><br>'+
+            '<label class="btn btn-warning">  Resim Seçiniz <input type="file" id="files" name="files[]" hidden> </label>',
         imageUrl: 'img/logo.jpg',
         imageWidth: 400,
         imageHeight: 200,
@@ -309,8 +309,8 @@ function newcategory(){
         html:'<input type="text" class="form-control" id="cat" aria-describedby="Categories" placeholder="Kategori Adı"> <br>'+
             '<input type="text" class="form-control" id="name" aria-describedby="Name" placeholder="İlk Menü Adı"> <br>'+ 
             '<input type="text" class="form-control" id="details" aria-describedby="Details" placeholder="İçerik"> <br>'+
-            '<input type="number" class="form-control" id="price" aria-describedby="Price" placeholder="Fiyat"> <br>',
-            // '<label class="btn btn-warning">  Resim Seçiniz <input type="file" id="files" name="files[]" hidden> </label>',
+            '<input type="number" class="form-control" id="price" aria-describedby="Price" placeholder="Fiyat"> <br>'+
+            '<label class="btn btn-warning">  Resim Seçiniz <input type="file" id="files" name="files[]" hidden> </label>',
         imageUrl: 'img/logo.jpg',
         imageWidth: 400,
         imageHeight: 200,
