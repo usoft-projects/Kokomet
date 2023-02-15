@@ -84,12 +84,12 @@ function update(d){
         title: test.split("**")[0]+ ', '+test.split("**")[1],
         html:'<input type="text" class="form-control" id="name" aria-describedby="Name" placeholder="isim" value="'+test.split("**")[1]+'"> <br>'+
             '<input type="text" class="form-control" id="details" aria-describedby="Details" placeholder="İçerik" value="'+test.split("**")[2]+'"> <br>'+
-            '<input type="number" class="form-control" id="price" aria-describedby="Price" placeholder="Fiyat" value="'+test.split("**")[3]+'"><br>'+
-            '<label class="btn btn-warning">  Resim Seçiniz  <input type="file" id="files" name="files[]" hidden> </label>',
-        // imageUrl: test.split("**")[5],
-        // imageWidth: 400,
-        // imageHeight: 200,
-        // imageAlt: 'Custom image',
+            '<input type="number" class="form-control" id="price" aria-describedby="Price" placeholder="Fiyat" value="'+test.split("**")[3]+'"><br>',
+            // '<label class="btn btn-warning">  Resim Seçiniz  <input type="file" id="files" name="files[]" hidden> </label>',
+        imageUrl: test.split("**")[5],
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'Custom image',
         showCancelButton: true,
         confirmButtonText: 'Güncelle',
         cancelButtonText: 'Vazgeç',
@@ -103,7 +103,8 @@ function update(d){
             var name = document.getElementById("name").value
             var details = document.getElementById("details").value
             var price = document.getElementById("price").value
-            var file = document.getElementById("files").files[0]
+            // var file = document.getElementById("files").files[0]
+            var file = undefined
             var link_image = test.split("**")[5]
             var keys = test.split("**")[0]
             var  others = local_storage
@@ -123,7 +124,7 @@ function update(d){
                     console.log(local_storage)
                     to_save.set(local_storage, function () {
                             Swal.fire("Güncellendi.", '', 'info')
-                            setTimeout(() => {  location.reload() }, 1500);
+                            setTimeout(() => {  location.reload() }, 1000);
                     })
               } else {
                 Swal.fire("Güncelleniyor Bekleniyiniz.", '', 'info')
@@ -148,7 +149,7 @@ function update(d){
                             console.log(local_storage)
                             to_save.set(local_storage, function () {
                                 Swal.fire("Güncellendi.", '', 'info')
-                                setTimeout(() => {  location.reload() }, 1500)
+                                setTimeout(() => {  location.reload() }, 1000)
                             })
                     })
                 }).catch(e =>{
@@ -174,15 +175,11 @@ function remove(d){
     Swal.fire({
         title: test.split("**")[0]+ ', '+test.split("**")[1],
         text: 'Menüyü silmek istediğinize emin misiniz?',
-        // imageUrl: link_image,
-        // imageWidth: 400,
-        // imageHeight: 200,
-        imageUrl: 'img/logo.jpg',
+        imageUrl: link_image,
         imageWidth: 400,
         imageHeight: 200,
-        imageAlt: 'Custom image',
         showCancelButton: true,
-        confirmButtonText: 'Evet, Sil',
+        confirmButtonText: 'Evet, Sil ',
         cancelButtonText: 'Vazgeç'
       }).then((result) => {
         if (result.isConfirmed) {
@@ -228,8 +225,8 @@ function newmenu(){
         html: drop +'<br><br>'+
             '<input type="text" class="form-control" id="name" aria-describedby="Name" placeholder="İsim"> <br>'+
             '<input type="text" class="form-control" id="details" aria-describedby="Details" placeholder="İçerik"> <br>'+
-            '<input type="number" class="form-control" id="price" aria-describedby="Price" placeholder="Fiyat" ><br>'+
-            '<label class="btn btn-warning">  Resim Seçiniz <input type="file" id="files" name="files[]" hidden> </label>',
+            '<input type="number" class="form-control" id="price" aria-describedby="Price" placeholder="Fiyat" ><br>',
+            // '<label class="btn btn-warning">  Resim Seçiniz <input type="file" id="files" name="files[]" hidden> </label>',
         imageUrl: 'img/logo.jpg',
         imageWidth: 400,
         imageHeight: 200,
@@ -247,8 +244,9 @@ function newmenu(){
             var name = document.getElementById("name").value
             var details = document.getElementById("details").value
             var price = document.getElementById("price").value
-            var file = document.getElementById("files").files[0]
-            // var file = undefined
+            // var file = document.getElementById("files").files[0]
+
+            var file = undefined
             var path = categories + "/" + name
             if (file === undefined) {
                     Swal.fire("Ekleniyor Bekleniyiniz.", '', 'info')
@@ -309,8 +307,8 @@ function newcategory(){
         html:'<input type="text" class="form-control" id="cat" aria-describedby="Categories" placeholder="Kategori Adı"> <br>'+
             '<input type="text" class="form-control" id="name" aria-describedby="Name" placeholder="İlk Menü Adı"> <br>'+ 
             '<input type="text" class="form-control" id="details" aria-describedby="Details" placeholder="İçerik"> <br>'+
-            '<input type="number" class="form-control" id="price" aria-describedby="Price" placeholder="Fiyat"> <br>'+
-            '<label class="btn btn-warning">  Resim Seçiniz <input type="file" id="files" name="files[]" hidden> </label>',
+            '<input type="number" class="form-control" id="price" aria-describedby="Price" placeholder="Fiyat"> <br>',
+            // '<label class="btn btn-warning">  Resim Seçiniz <input type="file" id="files" name="files[]" hidden> </label>',
         imageUrl: 'img/logo.jpg',
         imageWidth: 400,
         imageHeight: 200,
@@ -328,8 +326,8 @@ function newcategory(){
             var name = document.getElementById("name").value
             var details = document.getElementById("details").value
             var price = document.getElementById("price").value
-            var file = document.getElementById("files").files[0]
-            // var file = undefined
+            // var file = document.getElementById("files").files[0]
+            var file = undefined
             var path = cate + "/" + name
             if (file === undefined) {
                     var to_save = firebase.database().ref();
@@ -350,7 +348,7 @@ function newcategory(){
                     local_storage["1Configurations"] = new_test
                     to_save.set(local_storage, function () {
                         Swal.fire("Yeni kategori eklendi. <br> Yeni Kategori Sıralaması Yapmayı Unutmayın.", '', 'info')
-                        setTimeout(() => {  location.reload() }, 6500);
+                        setTimeout(() => {  location.reload() }, 4500);
                     })   
                 })
 
@@ -378,7 +376,7 @@ function newcategory(){
                             local_storage["1Configurations"] = new_test
                             to_save.set(local_storage, function () {
                                 Swal.fire("Yeni kategori eklendi. <br> Yeni Kategori Sıralaması Yapmayı Unutmayın.", '', 'info')
-                                setTimeout(() => {  location.reload() }, 6500);
+                                setTimeout(() => {  location.reload() }, 4500);
                             })   
                         })
                     })
@@ -395,9 +393,9 @@ function newcategory(){
 
 }
 
-function deletecategory(){
-    Swal.fire('developing...', '', 'info') 
-}
+// function deletecategory(){
+//     Swal.fire('developing...', '', 'info') 
+// }
 // function image_view(d){
 //     var url = d.id
 //     Swal.fire({
