@@ -475,3 +475,13 @@ function ordercategory(){
         })
         
 }
+
+function demo(){
+    Swal.fire({
+        toast: true,
+        title: '<b>Demo Sürümü</b> ',
+        html:"Demo Bitiş Tarihi: <a href='mailto:usoft.projects@gmail.com'><b><u> 15.03.2023</b></u></a> <br> <p>&copy;Copyright 2023. All Rights Reserved.<br></p>",
+        imageUrl: 'img/rocket.png',
+        imageAlt: 'Custom image',
+      });
+}
