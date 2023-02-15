@@ -86,10 +86,10 @@ function update(d){
             '<input type="text" class="form-control" id="details" aria-describedby="Details" placeholder="İçerik" value="'+test.split("**")[2]+'"> <br>'+
             '<input type="number" class="form-control" id="price" aria-describedby="Price" placeholder="Fiyat" value="'+test.split("**")[3]+'"><br>'+
             '<label class="btn btn-warning">  Resim Seçiniz  <input type="file" id="files" name="files[]" hidden> </label>',
-        imageUrl: test.split("**")[5],
-        imageWidth: 400,
-        imageHeight: 200,
-        imageAlt: 'Custom image',
+        // imageUrl: test.split("**")[5],
+        // imageWidth: 400,
+        // imageHeight: 200,
+        // imageAlt: 'Custom image',
         showCancelButton: true,
         confirmButtonText: 'Güncelle',
         cancelButtonText: 'Vazgeç',
@@ -174,11 +174,15 @@ function remove(d){
     Swal.fire({
         title: test.split("**")[0]+ ', '+test.split("**")[1],
         text: 'Menüyü silmek istediğinize emin misiniz?',
-        imageUrl: link_image,
+        // imageUrl: link_image,
+        // imageWidth: 400,
+        // imageHeight: 200,
+        imageUrl: 'img/logo.jpg',
         imageWidth: 400,
         imageHeight: 200,
+        imageAlt: 'Custom image',
         showCancelButton: true,
-        confirmButtonText: 'Evet, Sil ',
+        confirmButtonText: 'Evet, Sil',
         cancelButtonText: 'Vazgeç'
       }).then((result) => {
         if (result.isConfirmed) {
@@ -224,9 +228,9 @@ function newmenu(){
         html: drop +'<br><br>'+
             '<input type="text" class="form-control" id="name" aria-describedby="Name" placeholder="İsim"> <br>'+
             '<input type="text" class="form-control" id="details" aria-describedby="Details" placeholder="İçerik"> <br>'+
-            '<input type="number" class="form-control" id="price" aria-describedby="Price" placeholder="Fiyat" ><br>'+
-            '<label class="btn btn-warning">  Resim Seçiniz <input type="file" id="files" name="files[]" hidden> </label>',
-        imageUrl: '../img/logo.jpg',
+            '<input type="number" class="form-control" id="price" aria-describedby="Price" placeholder="Fiyat" ><br>',
+            // '<label class="btn btn-warning">  Resim Seçiniz <input type="file" id="files" name="files[]" hidden> </label>',
+        imageUrl: 'img/logo.jpg',
         imageWidth: 400,
         imageHeight: 200,
         imageAlt: 'Custom image',
@@ -305,9 +309,9 @@ function newcategory(){
         html:'<input type="text" class="form-control" id="cat" aria-describedby="Categories" placeholder="Kategori Adı"> <br>'+
             '<input type="text" class="form-control" id="name" aria-describedby="Name" placeholder="İlk Menü Adı"> <br>'+ 
             '<input type="text" class="form-control" id="details" aria-describedby="Details" placeholder="İçerik"> <br>'+
-            '<input type="number" class="form-control" id="price" aria-describedby="Price" placeholder="Fiyat"> <br>'+
-            '<label class="btn btn-warning">  Resim Seçiniz <input type="file" id="files" name="files[]" hidden> </label>',
-        imageUrl: '../img/logo.jpg',
+            '<input type="number" class="form-control" id="price" aria-describedby="Price" placeholder="Fiyat"> <br>',
+            // '<label class="btn btn-warning">  Resim Seçiniz <input type="file" id="files" name="files[]" hidden> </label>',
+        imageUrl: 'img/logo.jpg',
         imageWidth: 400,
         imageHeight: 200,
         imageAlt: 'Custom image',
@@ -394,26 +398,26 @@ function newcategory(){
 function deletecategory(){
     Swal.fire('developing...', '', 'info') 
 }
-function image_view(d){
-    var url = d.id
-    Swal.fire({
-        title: "Menü Resmi",
-        imageUrl: url,
-        imageWidth: 400,
-        imageHeight: 200,
-        imageAlt: 'Custom image',
-        showCloseButton: true,
-        showCancelButton: false,
-        confirmButtonText:'Kapat.',
-        })
+// function image_view(d){
+//     var url = d.id
+//     Swal.fire({
+//         title: "Menü Resmi",
+//         imageUrl: url,
+//         imageWidth: 400,
+//         imageHeight: 200,
+//         imageAlt: 'Custom image',
+//         showCloseButton: true,
+//         showCancelButton: false,
+//         confirmButtonText:'Kapat.',
+//         })
 
-}
+// }
 function usoft(){
     Swal.fire({
         toast: true,
         title: 'USoft - <b><u>USoft the clear choice</b></u> ',
         html:"You can reach us at <a href='mailto:usoft.projects@gmail.com'><b><u> this address.</b></u></a> <br> <p>&copy;Copyright 2022. All Rights Reserved.<br> <b>USoft </b></p>",
-        imageUrl: '../img/rocket.png',
+        imageUrl: 'img/rocket.png',
         imageAlt: 'Custom image',
       });
 }
@@ -440,7 +444,7 @@ function ordercategory(){
     Swal.fire({
         title: "Kategori Sıralama",
         html:div_drop,
-        imageUrl: '../img/logo.jpg',
+        imageUrl: 'img/logo.jpg',
         imageWidth: 400,
         imageHeight: 200,
         imageAlt: 'Custom image',
