@@ -91,7 +91,7 @@
             <div class="sidebar-card d-none d-lg-flex">
                 <img class="sidebar-card-illustration mb-2" src="img/logo.jpg" alt="...">
                 <p class="text-center mb-2" id="last_status">Lisans Bitiş Tarihi <br>
-                <a class="btn btn-danger btn-sm" href="#!" >Demo</a></p>
+                <a class="btn btn-danger btn-sm" href="#!" onclick="demo()">Demo</a></p>
             </div>
 
 
@@ -159,6 +159,16 @@
         toast: true,
         title: 'USoft - <b><u>USoft the clear choice</b></u> ',
         html:"You can reach us at <a href='mailto:usoft.projects@gmail.com'><b><u> this address.</b></u></a> <br> <p>&copy;Copyright 2022. All Rights Reserved.<br> <b>USoft </b></p>",
+        imageUrl: 'img/rocket.png',
+        imageAlt: 'Custom image',
+      });
+      
+}
+function demo(){
+    Swal.fire({
+        toast: true,
+        title: '<b>Demo Sürümü</b> ',
+        html:"Demo Bitiş Tarihi: <a href='mailto:usoft.projects@gmail.com'><b><u> 15.03.2023</b></u></a> <br> <p>&copy;Copyright 2023. All Rights Reserved.</p>",
         imageUrl: 'img/rocket.png',
         imageAlt: 'Custom image',
       });
