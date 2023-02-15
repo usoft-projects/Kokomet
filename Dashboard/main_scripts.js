@@ -414,7 +414,7 @@ function usoft(){
     Swal.fire({
         toast: true,
         title: 'USoft - <b><u>USoft the clear choice</b></u> ',
-        html:"You can reach us at <a href='mailto:usoft.projects@gmail.com'><b><u> this address.</b></u></a> <br> <p>&copy;Copyright 2022. All Rights Reserved.<br> <b>USoft </b></p>",
+        html:"You can reach us at <a href='mailto:usoft.projects@gmail.com'><b><u> this address.</b></u></a> <br> <p>&copy;Copyright 2023. All Rights Reserved.</p>",
         imageUrl: 'img/rocket.png',
         imageAlt: 'Custom image',
       });
@@ -480,7 +480,7 @@ function demo(){
     Swal.fire({
         toast: true,
         title: '<b>Demo Sürümü</b> ',
-        html:"Demo Bitiş Tarihi: <a href='mailto:usoft.projects@gmail.com'><b><u> 15.03.2023</b></u></a> <br> <p>&copy;Copyright 2023. All Rights Reserved.<br></p>",
+        html:"Demo Bitiş Tarihi: <a href='mailto:usoft.projects@gmail.com'><b><u> 15.03.2023</b></u></a> <br> <p>&copy;Copyright 2023. All Rights Reserved.</p>",
         imageUrl: 'img/rocket.png',
         imageAlt: 'Custom image',
       });
